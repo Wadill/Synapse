@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f0f4f8;
+  font-family: var(--font-geist-sans), sans-serif; /* Apply GeistSans via CSS variable */
+}
+
+.container {
+  max-width: 1200px;
+}
