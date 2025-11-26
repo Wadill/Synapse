@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold">
-          0G-HealthAI
+          Synapse
         </Link>
         <div className="md:hidden">
           <button
