@@ -1,101 +1,211 @@
-# 0G-HealthAI
+Here’s your content fully formatted as a clean, professional **README.md**:
 
-Welcome to **0G-HealthAI**, a decentralized AI-powered healthcare management application built on the 0G Modular Layer 1 blockchain. This project aims to revolutionize healthcare by making it a public good through secure, transparent, and intelligent data management using Next.js, Tailwind CSS, TypeScript, and 0G's innovative blockchain infrastructure.
+---
 
-- **Repository**: [https://github.com/Wadill/OG-HealthAI](https://github.com/Wadill/OG-HealthAI)
+# **Synapse**
 
-🚀 0G-HealthAI LIVE on MAINNET!
-Contract: 0x1F0441f4aD7ddAf44187F780afc6AacdC270Bba7
-Explorer: https://explorer.0g.ai/address/ 0x1F0441f4aD7ddAf44187F780afc6AacdC270Bba7
+Welcome to **Synapse**, a decentralized AI-powered healthcare platform built on **Polygon** — putting patients back in control of their medical data with encrypted *Intelligent Health NFTs*, real-time AI diagnostics, and verifiable sharing with doctors.
 
-## What it Does
-0G-HealthAI empowers patients and healthcare providers with a decentralized platform to store encrypted medical records, access AI-driven diagnostics, and share data securely via Intelligent NFTs (INFTs). It leverages 0G's modular services to ensure privacy, verifiability, and scalability.
+**Repository:** [https://github.com/Wadill/Synapse](https://github.com/Wadill/Synapse)
+**Live Demo:** [https://synapse-health.vercel.app](https://synapse-health.vercel.app)
+**Testnet Deployment (Amoy):** Contract `0xA1b2C3d4...` (view on PolygonScan)
+**Mainnet Launch:** Q1 2025
 
-## The Problem it Solves
-This project addresses critical issues in traditional healthcare systems, including data privacy breaches, lack of patient control, and inaccessible real-time insights. By decentralizing data and integrating AI, it fosters trust and accessibility for all.
+---
 
-## Features
-- Secure storage of medical records on 0G Storage.
-- AI-powered health diagnostics using 0G Compute.
-- Verifiable data sharing via smart contracts on 0G Chain.
-- Real-time analytics with 0G Data Availability.
-- INFTs for dynamic, transferable health profiles.
+## **What It Does**
 
-## Technologies Used
-- **Frontend**: Next.js (React framework), Tailwind CSS (styling), TypeScript (type safety).
-- **Blockchain**: 0G Chain (EVM-compatible), 0G Storage, 0G Compute, 0G Data Availability.
-- **Development Tools**: Hardhat (smart contracts), Ethers.js (blockchain interaction), RainbowKit (wallet integration), 0G SDKs.
-- **AI Integration**: 0G Compute for running diagnostic models.
+Synapse lets patients own their lifetime medical records as **updatable, encrypted Intelligent Health NFTs** on Polygon.
 
-## How We Built It
-1. **Setup**: Initialized a Next.js project with TypeScript and Tailwind CSS.
-2. **Smart Contracts**: Developed and deployed a Solidity contract for INFTs using Hardhat on 0G Chain.
-3. **Frontend**: Created a responsive UI with wallet integration via RainbowKit.
-4. **Backend**: Integrated 0G Storage for data and 0G Compute for AI inference via custom APIs.
-5. **Testing**: Iteratively tested on the 0G testnet to ensure functionality.
+1. Upload records
+2. AI analyzes privately
+3. Receive instant diagnostics & personalized insights
+4. Share securely with doctors or emergency responders
 
-## Roadmap
-### Wave 1: Ideation and Initial Development
-- Defined features and built a demo with encrypted data storage and INFT creation.
-- Illustration: Flowchart of user journey (login → upload data → create INFT).
+All at **sub-cent fees** and **sub-second finality**.
 
-### Wave 2: MVP Development
-- Added AI diagnostics on 0G Compute and data sharing via smart contracts.
-- Enhanced UI with a chat interface and tested on 0G testnet.
-- Illustration: Diagram of MVP workflow across 0G modules.
+---
 
-### Wave 3: Production-Ready Deployment
-- Launched a live platform with free credits, a status dashboard, and chat-based analytics.
-- Expanded to multi-chain support and deployed to 0G mainnet.
-- Illustration: Mockup of the interface with chat panel and health chart.
+## **The Problem It Solves**
 
-### Wave 4: Scaling and Partnerships
-- Aim for 100+ users and collaborate with healthcare networks.
-- Plan for cross-chain interoperability and community AI tools.
-- Illustration: Network diagram of 0G-HealthAI ecosystem.
+Centralized healthcare systems:
+❌ leak data
+❌ lock patients out
+❌ cost too much
 
-## Challenges We Ran Into
-- Navigating the limited 0G documentation for modular integration.
-- Optimizing AI inference speed and cost on 0G Compute.
-- Ensuring robust encryption for sensitive health data.
+Synapse fixes this with **Polygon’s zkEVM**, **Polygon ID**, and **Lit Protocol** to deliver:
 
-## What We Learned
-- Mastered 0G’s modular architecture and its potential for healthcare.
-- Gained insights into balancing compute resources and security.
-- Discovered the transformative power of INFTs for health records.
+* True data ownership
+* HIPAA-grade privacy
+* Instant, global interoperability
+* Consumer-scale UX
 
-## What's Next
-- Expand to support additional blockchains (e.g., Ethereum, Polygon).
-- Integrate advanced AI models for predictive analytics.
-- Partner with healthcare providers and develop a mobile app.
+---
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Wadill/OG-HealthAI.git
-   cd OG-HealthAI
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Set up environment variables in `.env.local`:
-   ```
-   NEXT_PUBLIC_0G_CHAIN_URL=<0G_TESTNET_RPC_URL>
-   NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID=<WALLET_CONNECT_PROJECT_ID>
-   PRIVATE_KEY=<YOUR_METAMASK_PRIVATE_KEY>
-   ```
-4. Run the development server:
-   ```bash
-   npm run dev
-   ```
+## **Features**
 
-## Contributing
-Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request. For major changes, please open an issue first to discuss.
+* **Encrypted medical records** on IPFS + Lit Protocol
+* **Intelligent Health NFTs (ERC-721A)** representing lifetime medical records
+* **Real-time AI diagnostics** (skin, ECG, blood panels) via off-chain AI workers
+* **Polygon ID** verified doctor credentials & patient identity
+* **Emergency QR access** (“break-glass” decryption)
+* **The Graph-powered dashboard** with rich visualizations
+* **Wearables sync** (Apple Health, Google Fit, Oura support coming)
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
 
-## Acknowledgments
-- Thanks to the 0G team for their pioneering blockchain technology.
-- Gratitude to the Wavehack community for inspiration and support.
+## **Technologies Used**
+
+**Frontend:**
+
+* Next.js 14, TypeScript, Tailwind CSS
+* Framer Motion, Recharts
+
+**Blockchain:**
+
+* Polygon zkEVM (Amoy → Mainnet)
+* Polygon CDK
+* Polygon ID
+
+**Encryption & Identity:**
+
+* Lit Protocol
+* Polygon ID
+
+**Storage:**
+
+* IPFS
+* NFT.Storage
+* web3.storage
+
+**Smart Contracts:**
+
+* Solidity, Hardhat
+* ERC-721A
+
+**Wallet & Indexing:**
+
+* wagmi, viem, RainbowKit
+* The Graph
+
+**AI:**
+
+* Hugging Face
+* Custom biomedical models (hybrid on/off-chain)
+
+---
+
+## **How We Built It**
+
+* Started with Polygon Buildathon template
+* Deployed **Intelligent Health NFT** + access control contracts
+* Built encrypted upload flow → IPFS → Lit-encrypted CID → on-chain
+* Created off-chain **AI workers** listening for events, running inference, writing results
+* Added **Polygon ID** for verifiable credentials without KYC
+* Indexed all user data with **The Graph** for instant dashboards
+* Deployed on Amoy → ready for mainnet
+
+---
+
+## **Roadmap**
+
+### **Wave 1 (Done)** – Testnet MVP
+
+* Encrypted records
+* Intelligent Health NFTs
+* Basic AI diagnostics
+
+### **Wave 2 – Mainnet + First 1,000 Users**
+
+* Full AI engine (3 medical models)
+* Doctor verification marketplace
+* Apple Health / Oura sync
+* AggLayer cross-chain health passports
+
+### **Wave 3 – Category Leader**
+
+* Insurance & clinical trials marketplace
+* Hospital integrations (India/LATAM pilot)
+* Synapse Predict (long-term risk scoring)
+* `$SYNAPSE` token + DAO
+
+### **Wave 4 – Global Standard**
+
+* 1M+ users
+* Major wearable & insurer partnerships
+* The Web3 EHR layer
+
+---
+
+## **Challenges We Ran Into**
+
+* Syncing off-chain AI inference latency with Polygon’s block speed
+* Keeping gas costs **< $0.01** for frequent updates
+* Achieving real **HIPAA-grade privacy** on a public chain (solved via Lit + Polygon ID)
+
+---
+
+## **What We Learned**
+
+Polygon is currently one of the fastest, cheapest, and most scalable chains for real consumer health applications.
+
+* Polygon ID + Lit Protocol = genuine medical privacy
+* Architecting with fundraising in mind leads to far better UX and scalability
+
+---
+
+## **What's Next**
+
+* Polygon mainnet launch (January 2025)
+* Mobile app with biometric + Polygon ID login
+* Seed round & `$SYNAPSE` token
+* AggLayer integration → universal health layer across chains
+
+---
+
+## **Installation**
+
+```bash
+git clone https://github.com/Wadill/Synapse.git
+cd Synapse
+npm install
+
+cp .env.example .env.local
+# Add your WalletConnect ID & private key
+
+npm run dev
+```
+
+---
+
+## **Contributing**
+
+Contributions welcome!
+
+1. Fork
+2. Create a branch
+3. Submit a PR
+
+For major changes, open an issue first.
+
+---
+
+## **License**
+
+MIT License — see `LICENSE`
+
+---
+
+## **Acknowledgments**
+
+* Polygon Labs & the Polygon ecosystem
+* Lit Protocol team
+* Polygon ID team
+* Buildathon judges
+* Global Web3 health community
+
+---
+
+# **Your health. Your data. Your Synapse.**
+
+---
