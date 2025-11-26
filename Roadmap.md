@@ -1,11 +1,11 @@
-# 0G-HealthAI Roadmap
+# Synapse Roadmap
 
-Welcome to the **0G-HealthAI Roadmap**, a visionary journey to transform healthcare into a decentralized, AI-powered public good using the 0G Modular Layer 1 blockchain. This roadmap outlines the evolution of 0G-HealthAI from ideation to a global healthcare ecosystem. Let’s dive into the waves of innovation!
+Welcome to the **Synapse Roadmap**, a visionary journey to transform healthcare into a decentralized, AI-powered public good using the 0G Modular Layer 1 blockchain. This roadmap outlines the evolution of Synapse from ideation to a global healthcare ecosystem. Let’s dive into the waves of innovation!
 
 ---
 
 ## Overview
-0G-HealthAI leverages Next.js, Tailwind CSS, TypeScript, and 0G’s modular services (Chain, Storage, Compute, Data Availability) to create a secure platform for medical record management, AI diagnostics, and data sharing via Intelligent NFTs (INFTs). This roadmap is a creative blueprint to guide development, testing, deployment, and scaling.
+Synapse leverages Next.js, Tailwind CSS, TypeScript, and 0G’s modular services (Chain, Storage, Compute, Data Availability) to create a secure platform for medical record management, AI diagnostics, and data sharing via Intelligent NFTs (INFTs). This roadmap is a creative blueprint to guide development, testing, deployment, and scaling.
 
 ---
 
@@ -99,7 +99,7 @@ Welcome to the **0G-HealthAI Roadmap**, a visionary journey to transform healthc
 - **Wave 4**: Gained insights into ecosystem building and sustainability.
 
 ## Future Vision
-Beyond Wave 4, 0G-HealthAI aims to pioneer a decentralized health metaverse, integrating virtual consultations, predictive health AI, and global health equity initiatives, all powered by 0G’s cutting-edge technology.
+Beyond Wave 4, Synapse aims to pioneer a decentralized health metaverse, integrating virtual consultations, predictive health AI, and global health equity initiatives, all powered by 0G’s cutting-edge technology.
 
 ## Contribution
 Join the journey! Fork the repo at [https://github.com/Wadill/OG-HealthAI](https://github.com/Wadill/OG-HealthAI), propose ideas, or test features. Your input shapes the future!
