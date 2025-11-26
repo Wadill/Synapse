@@ -70,7 +70,7 @@ export default function Dashboard() {
           transition={{ duration: 0.8 }}
           className="text-5xl font-extrabold text-gray-900 mb-6 text-center bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent"
         >
-          0G-HealthAI Dashboard
+          Synapse Dashboard
         </motion.h1>
         <p className="text-lg text-gray-600 mb-10 text-center max-w-3xl mx-auto">
           Your premier hub for decentralized healthcare innovation.
