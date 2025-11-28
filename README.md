@@ -3,7 +3,7 @@
 Welcome to **Synapse**, a decentralized AI-powered healthcare platform built on **Polygon** — putting patients back in control of their medical data with encrypted *Intelligent Health NFTs*, real-time AI diagnostics, and verifiable sharing with doctors.
 
 **Repository:** [https://github.com/Wadill/Synapse](https://github.com/Wadill/Synapse)
-**Live Demo:** [https://synapse-health.vercel.app](https://synapse-health.vercel.app)
+**Live Demo:** https://synapse-puce-iota.vercel.app/
 
 
 ## LIVE on MAINNET! Contract: 0x1F0441f4aD7ddAf44187F780afc6AacdC270Bba7 
