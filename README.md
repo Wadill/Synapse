@@ -150,15 +150,6 @@ Polygon is currently one of the fastest, cheapest, and most scalable chains for 
 
 ---
 
-## **What's Next**
-
-* Polygon mainnet launch (January 2025)
-* Mobile app with biometric + Polygon ID login
-* Seed round & `$SYNAPSE` token
-* AggLayer integration → universal health layer across chains
-
----
-
 ## **Installation**
 
 ```bash
