@@ -75,7 +75,7 @@ export default function Home() {
           >
             <h2 className="text-2xl font-semibold text-blue-600 mb-4">Challenges I Ran Into</h2>
             <p className="text-gray-700">
-              Integrating 0G’s modular services (Storage, Compute, DA) with Next.js proved complex due to limited documentation. Ensuring secure encryption for medical data on 0G Storage required extensive testing. Balancing AI inference speed on 0G Compute with cost efficiency was another hurdle.
+              Integrating 0G's modular services (Storage, Compute, DA) with Next.js proved complex due to limited documentation. Ensuring secure encryption for medical data on 0G Storage required extensive testing. Balancing AI inference speed on 0G Compute with cost efficiency was another hurdle.
             </p>
           </motion.div>
 
