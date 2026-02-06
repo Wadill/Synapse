@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AI Model Visual Canvas</title>
+  <script src="https://cdn.jsdelivr.net/npm/fabric@5.3.1/dist/fabric.min.js"></script>
+</head>
+<body>
+  <canvas id="canvas" width="800" height="600" style="border:1px solid #000;"></canvas>
+  <button onclick="addObject('rect')">Add Rectangle (e.g., Image Placeholder)</button>
+  <button onclick="addObject('text')">Add Text (e.g., Score)</button>
+
+  <script>
+    const canvas = new fabric.Canvas('canvas');
+
+    function addObject(type) {
+      let obj;
+      if (type === 'rect') {
+        obj = new fabric.Rect({ left: 100, top: 100, fill: 'blue', width: 100, height: 100 });
+      } else if (type === 'text') {
+        obj = new fabric.Text('Risk: High', { left: 200, top: 200, fill: 'red' });
+      }
+      canvas.add(obj);
+    }
+
+    // Load from JSON (e.g., visual_layout in models.json)
+    function loadLayout(layout) {
+      layout.canvas_objects.forEach(obj => addObject(obj)); // Extend for real types
+    }
+
+    // Example: Load skin model layout
+    loadLayout({ canvas_objects: ['input_image', 'output_heatmap'] });
+  </script>
+</body>
+</html>

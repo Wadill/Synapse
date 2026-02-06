@@ -1,0 +1,69 @@
+{
+  "models": [
+    {
+      "id": "skin_diagnosis",
+      "type": "image_classification",
+      "base_model": "google/vit-base-patch16-224-in21k",
+      "description": "Classifies skin conditions from images. Fine-tune on dermatology datasets.",
+      "training_params": {
+        "epochs": 10,
+        "batch_size": 32,
+        "learning_rate": 0.001,
+        "dataset": "ISIC_2019" // Hugging Face dataset
+      },
+      "inference_endpoint": "/api/inference/skin", // For off-chain calls
+      "contract_integration": {
+        "oracle": "Chainlink", // Call via external adapter
+        "event_trigger": "NewRecordUploaded" // From your Health NFT contract
+      },
+      "visual_layout": {
+        "canvas_objects": ["input_image", "output_heatmap", "confidence_bar"]
+      }
+    },
+    {
+      "id": "ecg_analysis",
+      "type": "time_series_classification",
+      "base_model": "temporal-conv-net",
+      "description": "Analyzes ECG for arrhythmias. Use wearable data.",
+      "training_params": {
+        "epochs": 15,
+        "batch_size": 64,
+        "learning_rate": 0.0005,
+        "dataset": "MIT-BIH_Arrhythmia"
+      },
+      "inference_endpoint": "/api/inference/ecg",
+      "contract_integration": {
+        "oracle": "Custom Off-Chain Worker",
+        "event_trigger": "WearableDataSynced"
+      },
+      "visual_layout": {
+        "canvas_objects": ["waveform_graph", "anomaly_markers", "risk_score_gauge"]
+      }
+    },
+    {
+      "id": "blood_panel_insights",
+      "type": "tabular_regression",
+      "base_model": "xgboost",
+      "description": "Predicts risks from blood metrics. Integrates with zk attributes.",
+      "training_params": {
+        "n_estimators": 100,
+        "max_depth": 6,
+        "dataset": "NHANES_Blood"
+      },
+      "inference_endpoint": "/api/inference/blood",
+      "contract_integration": {
+        "oracle": "Polygon Oracles",
+        "event_trigger": "AttributeProofSubmitted" // Ties to zk feature
+      },
+      "visual_layout": {
+        "canvas_objects": ["metric_table", "trend_chart", "alert_icons"]
+      }
+    }
+  ],
+  "global_settings": {
+    "framework": "HuggingFace Transformers + Scikit-learn",
+    "privacy": "Federated Learning for user data",
+    "storage": "0G for model weights",
+    "contract_hooks": "Emit events for AI triggers, use oracles for results"
+  }
+}
