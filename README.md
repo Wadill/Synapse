@@ -195,4 +195,6 @@ MIT License — see `LICENSE`
 
 # **Your health. Your data. Your Synapse.**
 
+Purpose, how to run training/inference, integration points
+
 ---
