@@ -58,6 +58,21 @@
       "visual_layout": {
         "canvas_objects": ["metric_table", "trend_chart", "alert_icons"]
       }
+    },
+    {
+      "id": "bmi_personalized",
+      "type": "on-device_regression",
+      "base_model": "tensorflow.js lightweight BMI predictor", // Or MobileNet-style
+      "description": "Computes BMI + tips locally; outputs zk-ready proof (range <30)",
+      "on_device": true,
+      "zk_proof": {
+        "circuit": "range-proof-bmi.circom", // Use Polygon ID or simple Groth16
+        "public_inputs": ["bmi_category"] // e.g., "under30"
+      },
+      "tips": {
+        "under30": "Great BMI! Consider balanced diet to maintain.",
+        "over30": "BMI elevated – suggest cutting carbs, add cardio."
+      }
     }
   ],
   "global_settings": {
